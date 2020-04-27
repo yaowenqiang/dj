@@ -1,3 +1,3 @@
 FROM openjdk:jdk-alpine
-
-CMD java -version
+COPY demo/target/demo-1.0-SNAPSHOT.jar /deployments/
+CMD java -jar /deployments/demo-1.0-SNAPSHOT.jar
